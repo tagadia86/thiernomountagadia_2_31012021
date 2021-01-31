@@ -1,0 +1,60 @@
+/*@import "./utils/variables";*/
+/*@import "./utils/functions";*/
+/**HEADER**/
+/*@import "./utils/extensions";*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-block {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 375px;
+  border: 1px solid black;
+}
+
+/*@import "./components/buttons";*/
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 375px;
+  height: 60px;
+  margin: auto;
+}
+.header__logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 165px;
+  object-fit: cover;
+}
+
+.position-zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50px;
+  background-image: linear-gradient(#cecece, #f5f5f5);
+}
+
+.position-zone p {
+  margin-left: 10px;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+/*@import "./layout/nav";*/
+/*@import "./layout/container";*/
+/*@import "./layout/form";*/
+/*@import "./pages/work";*/
+/*@import "./pages/about";*/
+/*@import "./pages/project";*/
+
+/*# sourceMappingURL=style.css.map */

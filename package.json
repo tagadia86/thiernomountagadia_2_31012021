@@ -1,0 +1,20 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "restaurants_online",
+  "main": "index.js",
+  "scripts": {
+      "sass": "sass --watch ./sass/main.scss:./css/style.css",
+      "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tagadia86/thiernomountagadia_2_31012021.git"
+  },
+  "author": "thierno mountaga dia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tagadia86/thiernomountagadia_2_31012021/issues"
+  },
+  "homepage": "https://github.com/tagadia86/thiernomountagadia_2_31012021#readme"
+}

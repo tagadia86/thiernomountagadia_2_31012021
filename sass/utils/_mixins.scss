@@ -1,0 +1,18 @@
+/**HEADER**/
+@mixin header-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 375px;
+    height: 60px;
+    margin: auto;
+}
+@mixin logo-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 165px;
+    object-fit:cover;
+}

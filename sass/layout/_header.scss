@@ -1,8 +1,20 @@
+/***HEADER***/
 .header
 {
-    @include header-features;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 375px;
+    height: 60px;
+    margin: auto;
     &__logo
     {
-        @include logo-features;   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 165px;
+        object-fit:cover;  
     }
 }

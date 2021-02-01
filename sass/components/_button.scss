@@ -1,0 +1,17 @@
+@mixin btn-features($btn-color:$color-secondary,$btn-width,$btn-height,$btn-curv-menu,$btn-color-text,$btn-font-size-menu,$btn-font-weight-menu)
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-image: linear-gradient($btn-color-menu, #a05adc);
+    background-color: $btn-color-menu;
+    width: $btn-width;
+    height: $btn-height;
+    border-radius: $btn-curv-menu;
+    color: $btn-color-text-menu;
+    font-size: $btn-font-size-menu;
+    font-weight: $btn-font-weight-menu;
+}

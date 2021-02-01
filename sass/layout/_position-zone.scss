@@ -1,3 +1,4 @@
+/***POSITION ZONE***/
 .position-zone
 {
     display:flex;
@@ -5,11 +6,15 @@
     align-items: center;
     flex-wrap: wrap;
     height: 50px;
-    background-image: linear-gradient(#cecece, #f5f5f5);
+    background-image: linear-gradient(#cfcfcf, #eaeaea);
 }
 .position-zone p
 {
     margin-left: 10px;
     font-weight: bold;
-    opacity: 0.6;
+    opacity: 0.8;
+}
+.fa-map-marker-alt
+{
+    opacity: 0.8;
 }

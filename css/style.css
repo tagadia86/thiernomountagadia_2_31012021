@@ -62,9 +62,10 @@
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
+  padding-bottom: 50px;
 }
 
-.body-text h1 {
+h1 {
   font-size: 1.2rem;
   text-align: center;
   margin: 40px 70px 0px 70px;
@@ -95,7 +96,43 @@
   font-weight: bold;
 }
 
-/*@import "./layout/nav";*/
+body section {
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.how {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 55px 0px 0px 0px;
+}
+.how__steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5edff;
+  width: 325px;
+  height: 75px;
+  border-radius: 20px;
+  box-shadow: 1px 4px 5px 5px #ebebeb;
+  margin: 0px 0px 25px 0px;
+}
+
+h2 {
+  margin: 0px 0px 35px 0px;
+}
+
+.how :nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
 /*@import "./layout/container";*/
 /*@import "./layout/form";*/
 /*@import "./pages/work";*/

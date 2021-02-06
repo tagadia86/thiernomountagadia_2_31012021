@@ -1,31 +1,83 @@
-
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
 .how
 {
     display: flex;
     flex-wrap: wrap;
-    margin: 55px 0px 0px 0px;
+   // margin: 55px 0px 0px 0px;
+    //border: 1px solid red;
     &__steps
-    {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        background-color: #f5edff;
-        width: 325px;
-        height: 75px;
-        border-radius: 20px;
-        box-shadow: 1px 4px 5px 5px #ebebeb;
-        margin: 0px 0px 25px 0px;
-    }
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5edff;
+            max-width: 325px;
+            height: 75px;
+            border-radius: 20px;
+            box-shadow: 1px 4px 5px 5px #ebebeb;
+            padding: 0px 75px 0px 75px;
+            margin: 0px 0px 25px 0px;
+        }
+    &__color
+        {
+            background-color: #f5edff;            
+        }
+    &__numbers
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25px;
+            width: 25px;
+            background-color: #9356dc;
+            border-radius: 25px;
+            color: white;
+            font-size: 0.75rem;
+            position: absolute;
+                left: -10px;
+        }
 }
-h2
+.how > p
 {
     margin: 0px 0px 35px 0px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
-.how :nth-child(2)
+.how > div
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
+    //border: 1px solid blue;
+}
+.how > div
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    //border: 1px solid blue;
+}
+.how > div div
+{
+    position: relative;
+}
+.fa__edit
+{
+    opacity: 0.5;
+    font-size: 1.3rem;
+    position: absolute;
+        left: 35px;
+    &__color
+    {
+        color: #9356dc;
+        opacity: 1;
+    }
 }

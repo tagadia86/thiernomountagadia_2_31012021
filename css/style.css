@@ -13,7 +13,6 @@
   flex-direction: column;
   margin: auto;
   max-width: 375px;
-  border: 1px solid black;
 }
 
 /***HEADER***/
@@ -63,6 +62,7 @@
   align-items: center;
   background-color: #f2f2f2;
   padding-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 h1 {
@@ -104,10 +104,15 @@ body section {
   align-items: center;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
 .how {
   display: flex;
   flex-wrap: wrap;
-  margin: 55px 0px 0px 0px;
 }
 .how__steps {
   display: flex;
@@ -115,22 +120,63 @@ body section {
   justify-content: center;
   align-items: center;
   background-color: #f5edff;
-  width: 325px;
+  max-width: 325px;
   height: 75px;
   border-radius: 20px;
   box-shadow: 1px 4px 5px 5px #ebebeb;
+  padding: 0px 75px 0px 75px;
   margin: 0px 0px 25px 0px;
 }
-
-h2 {
-  margin: 0px 0px 35px 0px;
+.how__color {
+  background-color: #f5edff;
+}
+.how__numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  background-color: #9356dc;
+  border-radius: 25px;
+  color: white;
+  font-size: 0.75rem;
+  position: absolute;
+  left: -10px;
 }
 
-.how :nth-child(2) {
+.how > p {
+  margin: 0px 0px 35px 0px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.how > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
+}
+
+.how > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.how > div div {
+  position: relative;
+}
+
+.fa__edit {
+  opacity: 0.5;
+  font-size: 1.3rem;
+  position: absolute;
+  left: 35px;
+}
+.fa__edit__color {
+  color: #9356dc;
+  opacity: 1;
 }
 
 /*@import "./layout/container";*/

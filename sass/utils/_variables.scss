@@ -7,28 +7,13 @@ $color-tertiary:#99E2D0;
 $btn-color-menu: $color-secondary;
 $btn-width-menu: 220px;
 $btn-height-menu: 50px;
-$btn-curv-menu:25px;
+$btn-curv-menu: 25px;
 $btn-color-text-menu: #fff;
 $btn-font-size-menu: 0.89rem ;
 $btn-font-weight-menu: bold ;
+/***FOOTER***/
+$footer-bg-color: #353535;
+$footercolor: white;
 
 
-@mixin steps-features
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    /*padding-left: 10px;
-    padding-right: 10px;*/
-
-    background-color: $step-color-process;
-    width: $step-width-process;
-    height: $step-height-process;
-    border-radius: $step-curv-process;
-    /*color: $step-color-text-process;*/
-    font-size: $step-font-size-process;
-    font-weight: $step-font-weight-process;
-    box-shadow: 1px 4px 5px 5px #ebebeb;
-}
 

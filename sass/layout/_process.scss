@@ -20,7 +20,7 @@
             max-width: 325px;
             height: 75px;
             border-radius: 20px;
-            //box-shadow: 1px 4px 5px 5px #ebebeb;
+            box-shadow: 1px 4px 5px 5px #ebebeb;
             padding: 0px 75px 0px 75px;
             margin: 0px 0px 25px 0px;
         }
@@ -45,7 +45,7 @@
 }
 .how > p
 {
-    margin: 0px 0px 35px 20px;
+    margin: 0px 0px 35px 0px;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -69,14 +69,6 @@
 {
     position: relative;
 }
-.how div :nth-child(2) h5
-{
-    padding-right: 20px;
-}
-.how div :nth-child(3) h5
-{
-    padding-right: 10px;
-}
 .fa__edit
 {
     opacity: 0.5;
@@ -86,18 +78,6 @@
     &__color
     {
         color: #9356dc;
-        opacity: 1;
-    }
-}
-.fa__edit:hover
-{
-    opacity: 0.5;
-    font-size: 1.3rem;
-    position: absolute;
-        left: 35px;
-    &__color
-    {
-        color: red;
         opacity: 1;
     }
 }

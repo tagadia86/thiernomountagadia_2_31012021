@@ -15,10 +15,11 @@
   flex-direction: column;
   margin: auto;
   max-width: 375px;
-  /*@include desktop
-  {
-      max-width: $desktop-max-width;
-  }*/
+}
+@media screen and (min-width: 376px) {
+  .page-block {
+    max-width: 1200px;
+  }
 }
 
 * {
@@ -71,6 +72,7 @@
 .body-text {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
@@ -132,6 +134,7 @@ h1 {
 .how {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 .how__steps {
   display: flex;
@@ -145,6 +148,12 @@ h1 {
   box-shadow: 1px 4px 5px 5px #ebebeb;
   padding: 0px 75px 0px 75px;
   margin: 0px 0px 25px 0px;
+}
+@media screen and (min-width: 376px) {
+  .how__steps {
+    width: desktop-max-width;
+    font-size: 1.85rem;
+  }
 }
 .how__color {
   background-color: #f5edff;
@@ -162,29 +171,44 @@ h1 {
   position: absolute;
   left: -10px;
 }
+@media screen and (min-width: 376px) {
+  .how {
+    align-items: center;
+  }
+}
 
 .how > p {
   margin: 0px 0px 35px 0px;
   font-size: 1.2rem;
   font-weight: bold;
 }
-
-.how > div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 100%;
+@media screen and (min-width: 376px) {
+  .how > p {
+    font-size: 2rem;
+  }
 }
 
 .how > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
   max-width: 100%;
+}
+@media screen and (min-width: 376px) {
+  .how > div {
+    width: 75%;
+  }
 }
 
 .how > div div {
   position: relative;
+  display: flex;
+}
+@media screen and (min-width: 376px) {
+  .how > div div {
+    max-width: 1200px;
+  }
 }
 
 .fa__edit {
@@ -206,11 +230,39 @@ h1 {
   background-color: #f6f6f6;
   padding: 60px 0px 40px 0px;
 }
+@media screen and (min-width: 376px) {
+  .restaurants {
+    max-width: 1200px;
+    align-items: center;
+  }
+}
 
-.restaurants > p {
-  margin: 0px 0px 30px 20px;
-  font-size: 1.1rem;
-  font-weight: bold;
+@media screen and (min-width: 376px) {
+  .restaurants > p {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+}
+
+.restaurants > div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media screen and (min-width: 376px) {
+  .restaurants > div {
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .restaurants > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .card {
@@ -239,6 +291,11 @@ h1 {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+@media screen and (min-width: 376px) {
+  .card {
+    width: 500px;
+  }
 }
 
 .card > div {
@@ -297,14 +354,33 @@ footer {
   color: white;
   padding: 45px 0px 40px 25px;
 }
+@media screen and (min-width: 376px) {
+  footer {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
-footer div {
+@media screen and (min-width: 376px) {
+  footer div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+footer div div {
   display: flex;
   flex-wrap: wrap;
   font-weight: bold;
 }
 
-footer div > p {
+footer div div > p {
   margin-left: 20px;
 }
 

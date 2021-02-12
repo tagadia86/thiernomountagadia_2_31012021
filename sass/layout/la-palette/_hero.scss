@@ -1,0 +1,27 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card_hero
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    //object-fit: cover;
+    //background-color: white;
+    width: 100%;
+    //height: 250px;
+    //border-radius: 15px;
+    margin: auto;
+    //position: relative;
+    //margin-bottom: 20px;
+}
+.card_hero img
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}

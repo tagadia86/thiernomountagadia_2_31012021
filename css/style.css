@@ -10,16 +10,23 @@
   box-sizing: border-box;
 }
 
+/*@mixin desktop 
+{
+  @media screen and (min-width: $desktop-min-width)
+  {
+      @content;
+  }
+}*/
 .page-block {
   display: flex;
   flex-direction: column;
   margin: auto;
   width: 100% px;
-}
-@media screen and (min-width: 600px) {
-  .page-block {
-    max-width: 1200px;
-  }
+  /*@include desktop
+  {
+      max-width: $desktop-max-width;
+      //padding: 0px 250px 0px 25px;
+  }*/
 }
 
 .contact {
@@ -518,17 +525,14 @@ footer ul li a {
   box-sizing: border-box;
 }
 
-.page-block-lapalette {
-  position: relative;
+.body {
+  background-color: aqua;
 }
 
 .la-palette-section {
-  border-radius: 40px 40px 0px 0px;
   padding: 35px 0px 35px 0px;
   background-color: #f6f6f6;
   width: 100%;
-  position: absolute;
-  top: 250px;
 }
 .la-palette-section__title {
   width: 90%;
@@ -542,51 +546,68 @@ footer ul li a {
   margin-bottom: 15px;
 }
 
+/*.la-palette-top-part
+{
+    width: 100%;
+    height: 50px;
+    background-color: red; 
+    border-radius: 40px 40px 0px 0px;
+    position: absolute;
+        top: 10px;
+}*/
 .heart-wrapper {
   display: flex;
   align-items: center;
   width: 90%;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
 }
 
 h2 {
   font-family: Shrikhand;
   margin-bottom: 40px;
+  height: 30px;
 }
 
 .menu-card {
   display: flex;
+  flex-direction: column;
   width: 90%;
-  height: 45px;
+  height: 65px;
   border-radius: 15px;
   background-color: white;
   box-shadow: 1px 4px 5px 5px #ebebeb;
-  padding: 10px;
   margin: auto;
   margin-bottom: 15px;
-  position: relative;
+  padding: 15px 20px 15px 10px;
 }
 .menu-card__price {
-  position: absolute;
-  right: 0px;
-  background-color: aqua;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
-/*.menu-card > div
-{
-    display: flex;
-    justify-content: space-between;
-    //flex-direction: column;
+.menu-card > p {
+  font-weight: bold;
 }
-.menu-card :nth-child(1)
+
+.menu-card > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-card > div :nth-child(1) {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+/*.menu-card :nth-child(1)
 {
     //font-weight: bold;
     //margin-bottom: 5px;
 }*/
 .footer-flot {
   width: 100%;
-  position: absolute;
-  top: 882px;
 }
 
 /*@import "./layout/container";*/

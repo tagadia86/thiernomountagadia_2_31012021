@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    //max-width: 375px;
+    min-width: 300px;
     width: 100%px;
     /*@include desktop
     {
@@ -30,6 +30,12 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+}
+body
+{
+    max-width: $desktop-max-width;
+    min-width: 320px;
+    margin: auto;
 }
 
 

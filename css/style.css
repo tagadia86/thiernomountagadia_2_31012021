@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   margin: auto;
+  min-width: 300px;
   width: 100% px;
   /*@include desktop
   {
@@ -36,6 +37,12 @@
   font-size: 2rem;
 }
 
+body {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -49,9 +56,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 375px;
+  width: 100%;
   height: 60px;
   margin: auto;
+  position: relative;
 }
 .header__logo {
   display: flex;
@@ -130,6 +138,7 @@ h1 {
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
+  margin: auto;
 }
 
 /*body section
@@ -525,18 +534,28 @@ footer ul li a {
   box-sizing: border-box;
 }
 
-.body {
-  background-color: aqua;
+@media screen and (min-width: 600px) {
+  .page-block-lapalette {
+    max-width: 1000px;
+  }
 }
 
 .la-palette-section {
-  padding: 35px 0px 35px 0px;
+  padding-bottom: 60px;
   background-color: #f6f6f6;
   width: 100%;
+  position: relative;
 }
 .la-palette-section__title {
   width: 90%;
   margin: auto;
+}
+@media screen and (min-width: 600px) {
+  .la-palette-section__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .la-palette-section__title__green-line {
   height: 2.5px;
@@ -545,16 +564,19 @@ footer ul li a {
   margin-top: 5px;
   margin-bottom: 15px;
 }
+.la-palette-section__btn {
+  max-width: 185px;
+  margin-top: 45px;
+}
+.la-palette-top-part {
+  width: 100%;
+  height: 30px;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0px 0px;
+  position: absolute;
+  top: -30px;
+}
 
-/*.la-palette-top-part
-{
-    width: 100%;
-    height: 50px;
-    background-color: red; 
-    border-radius: 40px 40px 0px 0px;
-    position: absolute;
-        top: 10px;
-}*/
 .heart-wrapper {
   display: flex;
   align-items: center;
@@ -567,14 +589,31 @@ footer ul li a {
 h2 {
   font-family: Shrikhand;
   margin-bottom: 40px;
-  height: 30px;
+}
+@media screen and (min-width: 600px) {
+  h2 {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .menu-card {
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 65px;
   border-radius: 15px;
   background-color: white;
   box-shadow: 1px 4px 5px 5px #ebebeb;
@@ -582,18 +621,50 @@ h2 {
   margin-bottom: 15px;
   padding: 15px 20px 15px 10px;
 }
+@media screen and (min-width: 600px) {
+  .menu-card {
+    width: 30%;
+    height: 90px;
+    align-items: center;
+    position: relative;
+  }
+}
 .menu-card__price {
   font-weight: bold;
   font-size: 0.9rem;
 }
+@media screen and (min-width: 600px) {
+  .menu-card__price {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    padding: 10px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+  }
+}
 
 .menu-card > p {
   font-weight: bold;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 600px) {
+  .menu-card > p {
+    font-size: 0.75rem;
+  }
 }
 
 .menu-card > div {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 600px) {
+  .menu-card > div {
+    font-size: 0.75rem;
+  }
 }
 
 .menu-card > div :nth-child(1) {
@@ -601,11 +672,15 @@ h2 {
   opacity: 0.75;
 }
 
-/*.menu-card :nth-child(1)
-{
-    //font-weight: bold;
-    //margin-bottom: 5px;
-}*/
+/***LA PALETTE HEADER***/
+.fa-arrow-left {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  position: absolute;
+  left: 20px;
+}
+
 .footer-flot {
   width: 100%;
 }

@@ -39,7 +39,6 @@
 
 body {
   max-width: 1200px;
-  min-width: 320px;
   margin: auto;
 }
 
@@ -601,6 +600,7 @@ h2 {
 .menu {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 600px) {
   .menu {
@@ -610,68 +610,104 @@ h2 {
   }
 }
 
-.menu-card {
+.menu-card-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   width: 90%;
+  height: 70px;
   border-radius: 15px;
   background-color: white;
   box-shadow: 1px 4px 5px 5px #ebebeb;
   margin: auto;
   margin-bottom: 15px;
-  padding: 15px 20px 15px 10px;
+  overflow: inherit;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  width: 100%;
+  background-color: white;
+  padding: 10px 0px 10px 10px;
+}
+.menu-card:hover + .anim-menu {
+  transform: scaleX(1);
+  width: 100px;
+}
+.menu-card:hover + .anim-menu > .fa-check {
+  transform: rotate(360deg);
 }
 @media screen and (min-width: 600px) {
   .menu-card {
     width: 30%;
     height: 90px;
     align-items: center;
-    position: relative;
   }
 }
-.menu-card__price {
+
+.menu-price {
   font-weight: bold;
   font-size: 0.9rem;
 }
 @media screen and (min-width: 600px) {
-  .menu-card__price {
+  .menu-price {
     display: flex;
     justify-content: flex-end;
     font-size: 0.75rem;
     background-color: #f6f6f6;
     border-radius: 15px;
     padding: 10px;
-    position: absolute;
-    top: 25px;
-    right: 10px;
+    /*position: absolute;
+        top: 25px;
+        right: 10px;*/
   }
 }
 
-.menu-card > p {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-@media screen and (min-width: 600px) {
-  .menu-card > p {
-    font-size: 0.75rem;
-  }
-}
-
-.menu-card > div {
+.anim-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  height: 70px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 600ms ease-in-out;
 }
+
+.fa-check {
+  color: #99E2D0;
+  color: #99E2D0;
+  padding: 5px;
+  border-radius: 25px;
+  background-color: white;
+  transition: transform 600ms ease-in-out;
+}
+
 @media screen and (min-width: 600px) {
-  .menu-card > div {
+  .menu-card > div > p {
     font-size: 0.75rem;
   }
 }
 
-.menu-card > div :nth-child(1) {
-  font-size: 0.9rem;
-  opacity: 0.75;
-}
-
+/*.menu-card > p
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+    @include desktop
+    {
+        //color: green;
+        font-size: 0.75rem;
+    }
+}*/
+/*.menu-card > div :nth-child(1)
+{
+    font-size: 0.9rem;
+    opacity: 0.75;
+}*/
 /***LA PALETTE HEADER***/
 .fa-arrow-left {
   text-decoration: none;

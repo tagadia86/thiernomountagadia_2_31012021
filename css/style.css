@@ -137,6 +137,7 @@ h1 {
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
+  opacity: 1;
   margin: auto;
 }
 
@@ -282,6 +283,11 @@ h5 {
   }
 }
 
+.img-link > a {
+  color: black;
+  text-decoration: none;
+}
+
 .restaurants-wrapper {
   background-color: #f6f6f6;
 }
@@ -376,6 +382,7 @@ figcaption {
 
 .card p {
   opacity: 0.8;
+  color: black;
 }
 
 .hide-on-hover {
@@ -507,6 +514,82 @@ footer ul li a {
         top: 2px;
      //color: red;
 }*/
+/*@mixin mobile-loader 
+{
+  @media screen and (min-width: $desktop-min-width)
+  {
+      @content;
+  }
+}*/
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px dashed #9356DC;
+  border-bottom: 16px dashed #FF79DA;
+  border-left: 16px dashed #99E2D0;
+  border-right: 16px dashed #f6f6f6;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  animation: spin 30s linear;
+  animation: spin 30s linear;
+  /*@include mobile-loader
+  {
+  border: 16px solid #f3f3f3;
+    border-radius: 50%;
+      border-top: 16px solid #9356DC;;
+    border-bottom: 16px solid #FF79DA;
+    border-left: 16px solid #99E2D0;
+    border-right: 16px solid #f6f6f6;
+    width: 120px;
+    height: 120px;
+  }*/
+}
+
+.loader-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  animation: disparaitre 30s linear;
+  visibility: hidden;
+}
+
+/*spin 
+{
+  0% { 
+      transform: rotate(0deg); 
+    }
+  100% {
+      transform: rotate(360deg); 
+    }
+}*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes disparaitre {
+  0% {
+    opacity: 1;
+    z-index: 99999999;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -601,6 +684,9 @@ h2 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  animation: menu-start 1s;
+  /*********/
+  transform-origin: top;
 }
 @media screen and (min-width: 600px) {
   .menu {
@@ -610,12 +696,26 @@ h2 {
   }
 }
 
+@keyframes menu-start {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  90% {
+    transform: scaleY(0.95);
+    opacity: 0.95;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
 .menu-card-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
-  height: 70px;
+  height: 75px;
   border-radius: 15px;
   background-color: white;
   box-shadow: 1px 4px 5px 5px #ebebeb;
@@ -623,11 +723,17 @@ h2 {
   margin-bottom: 15px;
   overflow: inherit;
 }
+@media screen and (min-width: 600px) {
+  .menu-card-wrapper {
+    width: 30%;
+  }
+}
 
 .menu-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
   border-radius: 15px;
   width: 100%;
   background-color: white;
@@ -640,29 +746,21 @@ h2 {
 .menu-card:hover + .anim-menu > .fa-check {
   transform: rotate(360deg);
 }
-@media screen and (min-width: 600px) {
-  .menu-card {
-    width: 30%;
-    height: 90px;
-    align-items: center;
-  }
-}
 
 .menu-price {
+  display: flex;
   font-weight: bold;
   font-size: 0.9rem;
+  margin-top: 30px;
 }
 @media screen and (min-width: 600px) {
   .menu-price {
     display: flex;
-    justify-content: flex-end;
-    font-size: 0.75rem;
+    justify-content: center;
+    align-items: center;
     background-color: #f6f6f6;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 10px;
-    /*position: absolute;
-        top: 25px;
-        right: 10px;*/
   }
 }
 
@@ -672,7 +770,6 @@ h2 {
   align-items: center;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
-  height: 70px;
   transform-origin: right;
   transform: scaleX(0);
   transition: transform 600ms ease-in-out;
@@ -687,12 +784,14 @@ h2 {
   transition: transform 600ms ease-in-out;
 }
 
-@media screen and (min-width: 600px) {
-  .menu-card > div > p {
-    font-size: 0.75rem;
-  }
-}
-
+/*.menu-card > div >p
+{
+    //margin-bottom: 10px;
+    @include desktop
+    {
+        font-size: 0.75rem;
+    }
+}*/
 /*.menu-card > p
 {
     font-weight: bold;
@@ -703,11 +802,17 @@ h2 {
         font-size: 0.75rem;
     }
 }*/
-/*.menu-card > div :nth-child(1)
-{
-    font-size: 0.9rem;
-    opacity: 0.75;
-}*/
+.menu-card > div :nth-child(1) {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.menu-card > div :nth-child(2) {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-top: 10px;
+}
+
 /***LA PALETTE HEADER***/
 .fa-arrow-left {
   text-decoration: none;
@@ -721,7 +826,6 @@ h2 {
   width: 100%;
 }
 
-/*@import "./layout/container";*/
 /*@import "./layout/form";*/
 /*@import "./pages/work";*/
 /*@import "./pages/about";*/

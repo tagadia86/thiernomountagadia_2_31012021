@@ -23,11 +23,15 @@
         //background-color: red;
     }
 }
+.img-link > a
+{
+    color: black;
+    text-decoration: none;
+}
 .restaurants-wrapper
 {   
     background-color: #f6f6f6;
 }
-
 .restaurants > p
 {
     margin-bottom: 40px;
@@ -69,9 +73,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    //object-fit: cover;
     background-color: white;
-    //max-width: 335px;
     width: 100%;
     height: 250px;
     border-radius: 15px;
@@ -131,6 +133,7 @@ figcaption
 .card p
 {
     opacity: 0.8;
+    color: black;
 }
 .hide-on-hover
 {

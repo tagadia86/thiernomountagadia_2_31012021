@@ -1,8 +1,6 @@
+/***LOADER***/
 .loader 
 {
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
   border: 16px solid #f3f3f3;
   border-radius: 100%;
     border-top: 16px dashed #9356DC;;
@@ -11,14 +9,9 @@
   border-right: 16px dashed #f6f6f6;
   width: 60px;
   height: 60px;
-
-    //z-index: 99999;
 position: absolute;
     top: 40%;
-    //bottom: 0;
     left: 45%;
-    //right: 50%;
-        //margin: auto;
     margin-left: auto;
     margin-right: auto;
     opacity: 0;
@@ -28,24 +21,12 @@ position: absolute;
 .loader-bg
 {
     position: fixed;
-    //z-index: 99999999;
     width: 100%;
     height: 100%;
     background: black;
     animation: beginning 1s linear ;
-    visibility: hidden;
-    
+    visibility: hidden;   
 }
-/*spin 
-{
-  0% { 
-      transform: rotate(0deg); 
-    }
-  100% {
-      transform: rotate(360deg); 
-    }
-}*/
-
 @keyframes spin 
 {
   0% {
@@ -55,7 +36,6 @@ position: absolute;
   100% {
       transform: rotate(360deg); 
       opacity: 0;
-     // visibility: hidden;
     }
 }
 @keyframes beginning 
@@ -66,9 +46,7 @@ position: absolute;
       visibility: visible;
     }
   100% {
-      //transform: rotate(360deg); 
       opacity: 1;
-      //z-index: 99999999;
       visibility: visible;
     }
 }

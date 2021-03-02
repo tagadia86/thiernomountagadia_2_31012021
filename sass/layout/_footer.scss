@@ -14,8 +14,6 @@ footer
     padding: 45px 0px 40px 25px;
     @include desktop
     {
-        //max-width: $desktop-max-width;
-        //padding: 0px 250px 0px 25px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -35,11 +33,7 @@ footer div
     
     @include desktop
         {
-            //display: flex;
             flex-direction: row;
-            //background-color: aqua;//
-            //justify-content: center;
-            //text-align: center;
             align-items: center;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -51,10 +45,6 @@ footer > div div
     flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
-    @include desktop
-        {
-            //margin: 0px 5px 0px 5px;
-        }
 }
 footer > div div a
 {
@@ -67,9 +57,7 @@ footer div ul
     @include desktop
     {
         display: flex;
-        //align-items: center;
         flex-direction: row;
-        //color: red;
     }
 }
 footer ul li 
@@ -98,34 +86,3 @@ footer div :nth-child(2)
     }
     
 }
-/*footer li
-{
-    margin-bottom: 10px;
-}*/
-
-
-
-
-/*footer div :nth-child(4)
-{
-    //list-style: none;
-    //margin-bottom: 10px;
-    //color: red;
-}*/
-/*footer .fas
-{
-    font-size: 0.8rem;
-    //color: red;
-}*/
-/*.fa-hands-helping
-{
-    position: absolute;
-        top: 2px;
-     //color: red;
-}*/
-/*.fa-utensils
-{
-    position: absolute;
-        top: 2px;
-     //color: red;
-}*/

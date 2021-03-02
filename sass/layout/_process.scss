@@ -1,9 +1,4 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing:content-box;
-}
+/***PROCESS***/
 @mixin desktop 
 {
   @media screen and (min-width: $desktop-min-width)
@@ -11,14 +6,6 @@
       @content;
   }
 }
-
-/*@mixin transition 
-{
-  @media only screen and (max-width: 441px) and (min-width: 376px) 
-  {
-      @content;
-  }
-}*/
 .how
 {
     display: flex;
@@ -26,9 +13,7 @@
     flex-direction: column;
     margin: auto;
     width: 90%;
-    //padding: 0px 20px 0px 20px;
-   // margin: 55px 0px 0px 0px;
-    //border: 1px solid red;
+
     &__steps
         {
             display: flex;
@@ -44,7 +29,6 @@
             margin: 0px 0px 25px 0px;
             @include desktop
             {
-                width: desktop-max-width;
                 font-size: 2rem;
             }
         }
@@ -84,14 +68,8 @@
 }
 h5
 {
-   /* @include transition
-    {
-        font-size: 1.2rem;
-        color: red;
-    }*/
     @include desktop
     {
-        //width: desktop-max-width;
         font-size: 1.5rem;
     }
 }
@@ -115,9 +93,7 @@ h5
     @include desktop
     {
         max-width: $desktop-max-width;
-        //justify-content: space-between;
     }
-    
 }
 .fa__edit
 {

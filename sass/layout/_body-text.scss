@@ -9,12 +9,6 @@
     background-color: #f2f2f2;
     padding-bottom: 50px;
     margin-bottom: 55px;
-   /* @include desktop
-    {
-        flex-direction: column;
-        max-width: 33%;
-        height: 100%;
-    }*/
 }
 h1
 {
@@ -42,11 +36,3 @@ h1
             transition: 1s;
         }
 }
-
-/*body section
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}*/

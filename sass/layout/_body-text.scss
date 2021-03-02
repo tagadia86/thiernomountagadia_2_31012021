@@ -34,7 +34,15 @@ h1
 .btn
 {
     @include btn-features;
+        &:hover 
+        {
+            opacity: 0.8;
+            
+            box-shadow: 1px 2px 2px 2px #6b6f71;
+            transition: 1s;
+        }
 }
+
 /*body section
 {
     display: flex;

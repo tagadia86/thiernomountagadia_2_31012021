@@ -1,47 +1,29 @@
-/*@mixin mobile-loader 
-{
-  @media screen and (min-width: $desktop-min-width)
-  {
-      @content;
-  }
-}*/
 .loader 
 {
     //display: flex;
     //justify-content: center;
     //align-items: center;
   border: 16px solid #f3f3f3;
-  border-radius: 50%;
+  border-radius: 100%;
     border-top: 16px dashed #9356DC;;
   border-bottom: 16px dashed #FF79DA;
   border-left: 16px dashed #99E2D0;
   border-right: 16px dashed #f6f6f6;
-  width: 120px;
-  height: 120px;
+  width: 60px;
+  height: 60px;
 
     //z-index: 99999;
 position: absolute;
     top: 40%;
     //bottom: 0;
-    left: 43%;
+    left: 45%;
     //right: 50%;
         //margin: auto;
     margin-left: auto;
     margin-right: auto;
     opacity: 0;
-  animation: spin 30s linear ;
-  animation: spin 30s linear ;
-        /*@include mobile-loader
-        {
-        border: 16px solid #f3f3f3;
-          border-radius: 50%;
-            border-top: 16px solid #9356DC;;
-          border-bottom: 16px solid #FF79DA;
-          border-left: 16px solid #99E2D0;
-          border-right: 16px solid #f6f6f6;
-          width: 120px;
-          height: 120px;
-        }*/
+  animation: spin 1s linear ;
+  animation: spin 1s linear ;
 }
 .loader-bg
 {
@@ -50,7 +32,7 @@ position: absolute;
     width: 100%;
     height: 100%;
     background: black;
-    animation: disparaitre 30s linear ;
+    animation: beginning 1s linear ;
     visibility: hidden;
     
 }
@@ -76,7 +58,7 @@ position: absolute;
      // visibility: hidden;
     }
 }
-@keyframes disparaitre 
+@keyframes beginning 
 {
   0% {
       opacity: 1;

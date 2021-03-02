@@ -8,6 +8,8 @@
     padding-right: 10px;
     background-image: linear-gradient($btn-color-menu, #a05adc);
     background-color: $btn-color-menu;
+    background-color: $btn-color-menu;
+    //background-color: darken($btn-color-menu, 5);
     width: $btn-width-menu;
     height: $btn-height-menu;
     border-radius: $btn-curv-menu;
@@ -16,4 +18,6 @@
     font-weight: $btn-font-weight-menu;
     opacity: 1;
     margin: auto;
+    //opacity: ;
+    
 }

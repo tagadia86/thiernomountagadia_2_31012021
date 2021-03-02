@@ -4,13 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*@mixin desktop 
-{
-  @media screen and (min-width: $desktop-min-width)
-  {
-      @content;
-  }
-}*/
 .page-block
 {
     display: flex;
@@ -18,24 +11,27 @@
     margin: auto;
     min-width: 300px;
     width: 100%px;
-    /*@include desktop
-    {
-        max-width: $desktop-max-width;
-        //padding: 0px 250px 0px 25px;
-    }*/
 }
-.contact
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-}
+
 body
 {
     max-width: $desktop-max-width;
-    //min-width: 320px;
     margin: auto;
 }
-
-
+/***FORM***/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+.container 
+{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

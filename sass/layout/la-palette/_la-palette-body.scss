@@ -145,6 +145,11 @@ h2
             }
         }
 }
+/*.menu-titles
+{
+    text-overflow: ellipsis;
+    color: red;
+}*/
 .menu-price
 {
     display: flex;
@@ -186,10 +191,28 @@ h2
     position: absolute;
         top: 10px;
 }
+.menu-card > div 
+{
+    //white-space: nowrap;
+    //background-color: yellow;
+    //overflow: hidden;
+    //text-overflow: "----";
+    //text-overflow: ellipsis;
+    width: 80%;
+    
+    
+    
+    //flex: 1;
+}
 .menu-card > div :nth-child(1)
 {
     font-size: 1rem;
     font-weight: bold;
+    //color: red;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
 }
 .menu-card > div :nth-child(2)
 {
@@ -197,6 +220,10 @@ h2
     font-size: 0.9rem;
     opacity: 0.75;
     margin-top: 10px;
+    //color: green;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 /***LA PALETTE HEADER***/
 .fa-arrow-left

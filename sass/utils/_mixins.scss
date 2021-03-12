@@ -1,19 +1,2 @@
-@mixin steps-features
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    /*padding-left: 10px;
-    padding-right: 10px;*/
 
-    background-color: $step-color-process;
-    width: $step-width-process;
-    height: $step-height-process;
-    border-radius: $step-curv-process;
-    /*color: $step-color-text-process;*/
-    font-size: $step-font-size-process;
-    font-weight: $step-font-weight-process;
-    box-shadow: 1px 4px 5px 5px #ebebeb;
-}
 

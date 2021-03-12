@@ -14,7 +14,6 @@
     background-color: #f6f6f6;
     margin: auto;
     padding: 60px 0px 40px 0px;
-
     @include desktop
     {
         max-width: $desktop-max-width;
@@ -84,8 +83,8 @@
         background-color: $color-tertiary;
         color: #008766;
         position: absolute;
-            top: 10px;
-            right: 10px;
+        top: 10px;
+        right: 10px;
     }
     @include desktop
     {
@@ -123,30 +122,7 @@
     opacity: 0.8;
     color: black;
 }
-.hide-on-hover
-{
-    font-size: 1.3rem;
-    position: absolute;
-        right: 15px;
-}
-.show-on-hover
-{
-    font-size: 1.3rem;
-    opacity: 0;
-    position: absolute;
-        right: 15px;
-}
-.show-on-hover:hover
-{
-    font-size: 1.3rem;
-    color: #9356dc;
-    //color: hsl(285, 100%, 50%);
-    //mix-blend-mode: lighten;
-    opacity: 1;
-    position: absolute;
-        right: 15px;
-    transition: 3s;
-}
+
 
 
 

@@ -30,14 +30,13 @@ footer div
 {
     display: flex;
     flex-direction: column;
-    
     @include desktop
-        {
-            flex-direction: row;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+    {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 footer > div div 
 {
@@ -64,7 +63,6 @@ footer ul li
 {
     list-style: none;
     margin-bottom: 10px;
-    
     @include desktop
     {
         display: flex;
